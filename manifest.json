@@ -1,0 +1,22 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "Assessment Companion",
+  "short_name": "AC",
+  "version": "0.1.3",
+  "manifest_version": 2,
+  "description": "Assessment Companion",
+  "icons": {
+    "16": "images/icons/icon16.png",
+    "48": "images/icons/icon48.png",
+    "128": "images/icons/icon128.png"
+  },
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "permissions": ["tabs"],
+  "offline_enabled": true,
+  "externally_connectable": {
+    "matches": ["*://*.summitlearning.org/*", "http://localhost/*"]
+  }
+}
